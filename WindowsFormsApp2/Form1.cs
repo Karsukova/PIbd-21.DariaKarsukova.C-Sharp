@@ -10,7 +10,7 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
-        private FighterPlane fighter;
+        private IFighter fighter;
         public Form1()
         {
             InitializeComponent();
@@ -31,13 +31,22 @@ namespace WindowsFormsApp2
         private void buttonCreate_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            fighter = new FighterPlane(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue,
-           Color.Yellow, true, true, true);
+            fighter = new Fighter(rnd.Next(100, 300), rnd.Next(1000, 2000),
+           Color.Orange);
             fighter.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxFighter.Width,
            pictureBoxFighter.Height);
             Draw();
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            fighter = new FighterPlane(rnd.Next(100, 300), rnd.Next(1000, 2000),
+           Color.Green, Color.Red, true, true);
+            fighter.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxFighter.Width,
+           pictureBoxFighter.Height);
 
+            Draw();
+        }
         private void buttonRight_Click(object sender, EventArgs e)
         {
             fighter.MoveTransport(Direction.Right);
@@ -61,5 +70,7 @@ namespace WindowsFormsApp2
             fighter.MoveTransport(Direction.Down);
             Draw();
         }
+
+
     }
 }

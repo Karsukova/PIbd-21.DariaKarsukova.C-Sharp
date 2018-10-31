@@ -34,6 +34,7 @@
             this.buttonRight = new System.Windows.Forms.Button();
             this.buttonUp = new System.Windows.Forms.Button();
             this.pictureBoxFighter = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFighter)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.buttonDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDown.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._31;
             this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonDown.Location = new System.Drawing.Point(794, 402);
+            this.buttonDown.Location = new System.Drawing.Point(888, 482);
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.Size = new System.Drawing.Size(30, 30);
             this.buttonDown.TabIndex = 5;
@@ -64,7 +65,7 @@
             this.buttonLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonLeft.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._41;
             this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonLeft.Location = new System.Drawing.Point(758, 402);
+            this.buttonLeft.Location = new System.Drawing.Point(852, 482);
             this.buttonLeft.Name = "buttonLeft";
             this.buttonLeft.Size = new System.Drawing.Size(30, 30);
             this.buttonLeft.TabIndex = 4;
@@ -76,7 +77,7 @@
             this.buttonRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonRight.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._4;
             this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonRight.Location = new System.Drawing.Point(830, 402);
+            this.buttonRight.Location = new System.Drawing.Point(924, 482);
             this.buttonRight.Name = "buttonRight";
             this.buttonRight.Size = new System.Drawing.Size(30, 30);
             this.buttonRight.TabIndex = 3;
@@ -88,7 +89,7 @@
             this.buttonUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonUp.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._21;
             this.buttonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonUp.Location = new System.Drawing.Point(794, 366);
+            this.buttonUp.Location = new System.Drawing.Point(888, 446);
             this.buttonUp.Name = "buttonUp";
             this.buttonUp.Size = new System.Drawing.Size(30, 30);
             this.buttonUp.TabIndex = 2;
@@ -97,18 +98,30 @@
             // 
             // pictureBoxFighter
             // 
-            this.pictureBoxFighter.Location = new System.Drawing.Point(12, 12);
+            this.pictureBoxFighter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxFighter.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxFighter.Name = "pictureBoxFighter";
-            this.pictureBoxFighter.Size = new System.Drawing.Size(878, 444);
+            this.pictureBoxFighter.Size = new System.Drawing.Size(972, 524);
             this.pictureBoxFighter.TabIndex = 0;
             this.pictureBoxFighter.TabStop = false;
             this.pictureBoxFighter.Click += new System.EventHandler(this.pictureBoxFighter_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(162, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(244, 31);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Создать истребитель";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 444);
+            this.ClientSize = new System.Drawing.Size(972, 524);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDown);
             this.Controls.Add(this.buttonLeft);
             this.Controls.Add(this.buttonRight);
@@ -131,6 +144,7 @@
         private System.Windows.Forms.Button buttonRight;
         private System.Windows.Forms.Button buttonLeft;
         private System.Windows.Forms.Button buttonDown;
+        private System.Windows.Forms.Button button1;
     }
 }
 
