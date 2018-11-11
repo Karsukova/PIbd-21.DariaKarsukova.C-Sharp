@@ -3,17 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 
-
-
-namespace WindowsFormsApp2
-{
-    public enum Direction
-    {
-        Up,
-        Down,
-        Left,
-        Right
-    }
+namespace WindowsFormsPlane
+{
     class FighterPlane
     {
         private float StartPosX;
@@ -27,18 +18,15 @@ namespace WindowsFormsApp2
         public Color MainColor { private set; get; }
         public Color DopColor { private set; get; }
         public bool MainEllipse { private set; get; }
-        public bool SideSpoiler { private set; get; }
-        public bool BackSpoiler { private set; get; }
         public FighterPlane(int maxSpeed, float weight, Color mainColor, Color dopColor, bool
-mainEllipse, bool sideSpoiler, bool backSpoiler)
+mainEllipse)
         {
             MaxSpeed = maxSpeed;
             Weight = weight;
             MainColor = mainColor;
             DopColor = dopColor;
             MainEllipse = mainEllipse;
-            SideSpoiler = sideSpoiler;
-            BackSpoiler = backSpoiler;
+            
         }
         public void SetPosition(int x, int y, int width, int height)
         {
