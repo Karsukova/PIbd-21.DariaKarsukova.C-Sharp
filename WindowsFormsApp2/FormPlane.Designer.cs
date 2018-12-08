@@ -1,6 +1,6 @@
-﻿namespace WindowsFormsApp2
+﻿namespace WindowsFormsPlane
 {
-    partial class Form1
+    partial class FormPlane
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -51,7 +51,7 @@
             // buttonDown
             // 
             this.buttonDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDown.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._31;
+            this.buttonDown.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._31;
             this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDown.Location = new System.Drawing.Point(888, 482);
             this.buttonDown.Name = "buttonDown";
@@ -63,7 +63,7 @@
             // buttonLeft
             // 
             this.buttonLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLeft.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._41;
+            this.buttonLeft.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._41;
             this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonLeft.Location = new System.Drawing.Point(852, 482);
             this.buttonLeft.Name = "buttonLeft";
@@ -75,7 +75,7 @@
             // buttonRight
             // 
             this.buttonRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRight.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._4;
+            this.buttonRight.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._4;
             this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonRight.Location = new System.Drawing.Point(924, 482);
             this.buttonRight.Name = "buttonRight";
@@ -87,7 +87,7 @@
             // buttonUp
             // 
             this.buttonUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUp.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._21;
+            this.buttonUp.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._21;
             this.buttonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonUp.Location = new System.Drawing.Point(888, 446);
             this.buttonUp.Name = "buttonUp";

@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2
+namespace WindowsFormsPlane
 {
-    public partial class Form1 : Form
+    public partial class FormPlane : Form
     {
         private IFighter fighter;
-        public Form1()
+        public FormPlane()
         {
             InitializeComponent();
         }

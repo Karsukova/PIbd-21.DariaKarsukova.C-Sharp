@@ -5,7 +5,7 @@ using System.Text;
 using System.Drawing;
 
 
-namespace WindowsFormsApp2
+namespace WindowsFormsPlane
 {
     public class Fighter : Plane
     {
