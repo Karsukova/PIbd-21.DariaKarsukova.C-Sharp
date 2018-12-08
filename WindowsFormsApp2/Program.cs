@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsPlane
 {
+    public delegate void planeDelegate(IFighter plane);
     static class Program
     {
         /// <summary>
