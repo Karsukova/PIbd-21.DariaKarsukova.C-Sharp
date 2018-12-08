@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Direction.cs" />
-    <Compile Include="Fighter.cs" />
+    <Compile Include="Airplane.cs" />
     <Compile Include="FighterPlane.cs" />
     <Compile Include="FormPlane.cs">
       <SubType>Form</SubType>
@@ -49,6 +49,7 @@
       <DependentUpon>FormPlane.cs</DependentUpon>
     </Compile>
     <Compile Include="IFighter.cs" />
+    <Compile Include="Parking.cs" />
     <Compile Include="Plane.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
