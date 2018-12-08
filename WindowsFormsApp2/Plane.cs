@@ -21,6 +21,10 @@ namespace WindowsFormsPlane
             pictureWidth = width;
             pictureHeight = height;
         }
+        public void SetMainColor(Color color)
+        {
+            MainColor = color;
+        }
         public abstract void DrawFighter(Graphics g);
         public abstract void MoveTransport(Direction direction);
     }

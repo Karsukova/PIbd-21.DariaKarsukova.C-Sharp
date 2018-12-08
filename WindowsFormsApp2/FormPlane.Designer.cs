@@ -30,29 +30,18 @@ namespace WindowsFormsPlane
         /// </summary>
         private void InitializeComponent()
         {
-            this.SetFighterPlane = new System.Windows.Forms.Button();
             this.pictureFighterPark = new System.Windows.Forms.PictureBox();
-            this.SetPlane = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.maskedTextBox = new System.Windows.Forms.TextBox();
             this.buttonTakePlane = new System.Windows.Forms.Button();
-            this.pictureBoxTakeCar = new System.Windows.Forms.PictureBox();
+            this.pictureBoxTakePlane = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.listBoxLevels = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFighterPark)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTakeCar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTakePlane)).BeginInit();
             this.SuspendLayout();
-            // 
-            // SetFighterPlane
-            // 
-            this.SetFighterPlane.Location = new System.Drawing.Point(941, 298);
-            this.SetFighterPlane.Name = "SetFighterPlane";
-            this.SetFighterPlane.Size = new System.Drawing.Size(234, 50);
-            this.SetFighterPlane.TabIndex = 1;
-            this.SetFighterPlane.Text = "Поставить истребитель";
-            this.SetFighterPlane.UseVisualStyleBackColor = true;
-            this.SetFighterPlane.Click += new System.EventHandler(this.buttonSetFighterPlane_Click);
             // 
             // pictureFighterPark
             // 
@@ -61,16 +50,6 @@ namespace WindowsFormsPlane
             this.pictureFighterPark.Size = new System.Drawing.Size(881, 639);
             this.pictureFighterPark.TabIndex = 0;
             this.pictureFighterPark.TabStop = false;
-            // 
-            // SetPlane
-            // 
-            this.SetPlane.Location = new System.Drawing.Point(941, 245);
-            this.SetPlane.Name = "SetPlane";
-            this.SetPlane.Size = new System.Drawing.Size(234, 47);
-            this.SetPlane.TabIndex = 6;
-            this.SetPlane.Text = "Поставить самолёт";
-            this.SetPlane.UseVisualStyleBackColor = true;
-            this.SetPlane.Click += new System.EventHandler(this.buttonSetPlane_Click);
             // 
             // label1
             // 
@@ -105,15 +84,15 @@ namespace WindowsFormsPlane
             this.buttonTakePlane.TabIndex = 10;
             this.buttonTakePlane.Text = "Забрать";
             this.buttonTakePlane.UseVisualStyleBackColor = true;
-            this.buttonTakePlane.Click += new System.EventHandler(this.buttonTakePlane_Click_1);
+            this.buttonTakePlane.Click += new System.EventHandler(this.buttonTakePlane_Click);
             // 
-            // pictureBoxTakeCar
+            // pictureBoxTakePlane
             // 
-            this.pictureBoxTakeCar.Location = new System.Drawing.Point(946, 473);
-            this.pictureBoxTakeCar.Name = "pictureBoxTakeCar";
-            this.pictureBoxTakeCar.Size = new System.Drawing.Size(229, 178);
-            this.pictureBoxTakeCar.TabIndex = 11;
-            this.pictureBoxTakeCar.TabStop = false;
+            this.pictureBoxTakePlane.Location = new System.Drawing.Point(946, 473);
+            this.pictureBoxTakePlane.Name = "pictureBoxTakePlane";
+            this.pictureBoxTakePlane.Size = new System.Drawing.Size(229, 178);
+            this.pictureBoxTakePlane.TabIndex = 11;
+            this.pictureBoxTakePlane.TabStop = false;
             // 
             // label3
             // 
@@ -134,26 +113,35 @@ namespace WindowsFormsPlane
             this.listBoxLevels.TabIndex = 14;
             this.listBoxLevels.SelectedIndexChanged += new System.EventHandler(this.listBoxLevels_SelectedIndexChanged_1);
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(939, 264);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(218, 58);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Заказать самолёт";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.AddPlane);
+            // 
+            // FormParking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 682);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBoxLevels);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBoxTakeCar);
+            this.Controls.Add(this.pictureBoxTakePlane);
             this.Controls.Add(this.buttonTakePlane);
             this.Controls.Add(this.maskedTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.SetPlane);
-            this.Controls.Add(this.SetFighterPlane);
             this.Controls.Add(this.pictureFighterPark);
-            this.Name = "Form1";
+            this.Name = "FormParking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ангар";
             ((System.ComponentModel.ISupportInitialize)(this.pictureFighterPark)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTakeCar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTakePlane)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,16 +150,15 @@ namespace WindowsFormsPlane
         #endregion
 
         private System.Windows.Forms.PictureBox pictureFighterPark;
-        private System.Windows.Forms.Button SetFighterPlane;
-        private System.Windows.Forms.Button SetPlane;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox maskedTextBox;
         private System.Windows.Forms.Button buttonTakePlane;
-        private System.Windows.Forms.PictureBox pictureBoxTakeCar;
+        private System.Windows.Forms.PictureBox pictureBoxTakePlane;
         private System.Windows.Forms.Label label3;
         private EventHandler Form1_Load;
         private System.Windows.Forms.ListBox listBoxLevels;
+        private System.Windows.Forms.Button button1;
     }
 }
 

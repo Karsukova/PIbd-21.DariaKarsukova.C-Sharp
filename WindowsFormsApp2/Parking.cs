@@ -108,22 +108,19 @@ namespace WindowsFormsPlane
         /// <param name="g"></param>
         public void Draw(Graphics g)
         {
-            DrawMarking(g);
-            //var keys = _places.Keys.ToList();
-            foreach (KeyValuePair<int, T> key in _places)
+            DrawParking(g);
+            var keys = _places.Keys.ToList();
+            
+            for (int i = 0; i < keys.Count; i++)
             {
-                key.Value.DrawFighter(g);
+                _places[keys[i]].DrawFighter(g);
             }
-            //for (int i = 0; i < keys.Count; i++)
-            //{
-            //    _places[keys[i]].
-            //}
         }
         /// <summary>
         /// Метод отрисовки разметки парковочных мест
         /// </summary>
         /// <param name="g"></param>
-        private void DrawMarking(Graphics g)
+        private void DrawParking(Graphics g)
         {
             Pen pen = new Pen(Color.Black, 3);
             //границы праковки

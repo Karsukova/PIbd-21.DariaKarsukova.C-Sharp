@@ -47,13 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Direction.cs" />
-    <Compile Include="Fighter.cs" />
-    <Compile Include="FighterrPlane.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Airplane.cs" />
+    <Compile Include="FighterPlane.cs" />
+    <Compile Include="FormPark.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormPark.Designer.cs">
+      <DependentUpon>FormPark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelect.Designer.cs">
+      <DependentUpon>FormSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="IFighter.cs" />
     <Compile Include="MultiLevelParking.cs" />
@@ -61,8 +67,12 @@
     <Compile Include="Plane.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vehicle.cs" />
+    <EmbeddedResource Include="FormPark.resx">
+      <DependentUpon>FormPark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect.resx">
+      <DependentUpon>FormSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
