@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsPlane
+﻿using System;
+
+namespace WindowsFormsPlane
 {
     partial class FormPlane
     {
@@ -36,15 +38,17 @@
             this.maskedTextBox = new System.Windows.Forms.TextBox();
             this.buttonTakePlane = new System.Windows.Forms.Button();
             this.pictureBoxTakeCar = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.listBoxLevels = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureFighterPark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTakeCar)).BeginInit();
             this.SuspendLayout();
             // 
             // SetFighterPlane
             // 
-            this.SetFighterPlane.Location = new System.Drawing.Point(956, 96);
+            this.SetFighterPlane.Location = new System.Drawing.Point(941, 298);
             this.SetFighterPlane.Name = "SetFighterPlane";
-            this.SetFighterPlane.Size = new System.Drawing.Size(234, 76);
+            this.SetFighterPlane.Size = new System.Drawing.Size(234, 50);
             this.SetFighterPlane.TabIndex = 1;
             this.SetFighterPlane.Text = "Поставить истребитель";
             this.SetFighterPlane.UseVisualStyleBackColor = true;
@@ -60,9 +64,9 @@
             // 
             // SetPlane
             // 
-            this.SetPlane.Location = new System.Drawing.Point(956, 12);
+            this.SetPlane.Location = new System.Drawing.Point(941, 245);
             this.SetPlane.Name = "SetPlane";
-            this.SetPlane.Size = new System.Drawing.Size(234, 68);
+            this.SetPlane.Size = new System.Drawing.Size(234, 47);
             this.SetPlane.TabIndex = 6;
             this.SetPlane.Text = "Поставить самолёт";
             this.SetPlane.UseVisualStyleBackColor = true;
@@ -71,7 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(912, 189);
+            this.label1.Location = new System.Drawing.Point(912, 370);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 20);
             this.label1.TabIndex = 7;
@@ -80,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(995, 230);
+            this.label2.Location = new System.Drawing.Point(952, 403);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 8;
@@ -88,14 +92,14 @@
             // 
             // maskedTextBox
             // 
-            this.maskedTextBox.Location = new System.Drawing.Point(1081, 224);
+            this.maskedTextBox.Location = new System.Drawing.Point(1047, 403);
             this.maskedTextBox.Name = "maskedTextBox";
             this.maskedTextBox.Size = new System.Drawing.Size(77, 26);
             this.maskedTextBox.TabIndex = 9;
             // 
             // buttonTakePlane
             // 
-            this.buttonTakePlane.Location = new System.Drawing.Point(1015, 268);
+            this.buttonTakePlane.Location = new System.Drawing.Point(990, 435);
             this.buttonTakePlane.Name = "buttonTakePlane";
             this.buttonTakePlane.Size = new System.Drawing.Size(110, 35);
             this.buttonTakePlane.TabIndex = 10;
@@ -105,17 +109,38 @@
             // 
             // pictureBoxTakeCar
             // 
-            this.pictureBoxTakeCar.Location = new System.Drawing.Point(956, 373);
+            this.pictureBoxTakeCar.Location = new System.Drawing.Point(946, 473);
             this.pictureBoxTakeCar.Name = "pictureBoxTakeCar";
             this.pictureBoxTakeCar.Size = new System.Drawing.Size(229, 178);
             this.pictureBoxTakeCar.TabIndex = 11;
             this.pictureBoxTakeCar.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(934, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 20);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Уровни:";
+            // 
+            // listBoxLevels
+            // 
+            this.listBoxLevels.FormattingEnabled = true;
+            this.listBoxLevels.ItemHeight = 20;
+            this.listBoxLevels.Location = new System.Drawing.Point(930, 88);
+            this.listBoxLevels.Name = "listBoxLevels";
+            this.listBoxLevels.Size = new System.Drawing.Size(244, 124);
+            this.listBoxLevels.TabIndex = 14;
+            this.listBoxLevels.SelectedIndexChanged += new System.EventHandler(this.listBoxLevels_SelectedIndexChanged_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 682);
+            this.Controls.Add(this.listBoxLevels);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBoxTakeCar);
             this.Controls.Add(this.buttonTakePlane);
             this.Controls.Add(this.maskedTextBox);
@@ -127,7 +152,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ангар";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureFighterPark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTakeCar)).EndInit();
             this.ResumeLayout(false);
@@ -145,6 +169,9 @@
         private System.Windows.Forms.TextBox maskedTextBox;
         private System.Windows.Forms.Button buttonTakePlane;
         private System.Windows.Forms.PictureBox pictureBoxTakeCar;
+        private System.Windows.Forms.Label label3;
+        private EventHandler Form1_Load;
+        private System.Windows.Forms.ListBox listBoxLevels;
     }
 }
 
