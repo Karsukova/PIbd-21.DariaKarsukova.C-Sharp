@@ -21,6 +21,20 @@ namespace WindowsFormsPlane
             Weapon = weapon;
             Line = line;
         }
+
+        public FighterPlane(string info) : base(info)
+        {
+            string[] strs = info.Split(';');
+            if (strs.Length == 6)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+                DopColor = Color.FromName(strs[3]);
+                Weapon = Convert.ToBoolean(strs[4]);
+                Line = Convert.ToBoolean(strs[5]);
+            }
+        }
         public override void MoveTransport(Direction direction)
         {
             float step = MaxSpeed * 100 / Weight;
@@ -85,6 +99,12 @@ namespace WindowsFormsPlane
         {
             DopColor = color;
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + ";" + DopColor.Name + ";" + Weapon + ";" +
+           Line;
+        }
     }
 }
 
