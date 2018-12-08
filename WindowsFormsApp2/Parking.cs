@@ -110,7 +110,7 @@ namespace WindowsFormsPlane
         {
             DrawParking(g);
             var keys = _places.Keys.ToList();
-            
+
             for (int i = 0; i < keys.Count; i++)
             {
                 _places[keys[i]].DrawFighter(g);
@@ -135,5 +135,26 @@ namespace WindowsFormsPlane
                 g.DrawLine(pen, i * _placeSizeWidth, 0, i * _placeSizeWidth, 400);
             }
         }
+
+        public T this[int ind]
+        {
+            get
+            {
+                if (_places.ContainsKey(ind))
+                {
+                    return _places[ind];
+                }
+                return null;
+            }
+            set
+            {
+                if (CheckFreePlace(ind))
+                {
+                    _places.Add(ind, value);
+                    _places[ind].SetPosition(5 + ind / 5 * _placeSizeWidth + 5, ind % 5 *
+                    _placeSizeHeight + 15, PictureWidth, PictureHeight);
+                }
+            }
+        }
     }
 }
