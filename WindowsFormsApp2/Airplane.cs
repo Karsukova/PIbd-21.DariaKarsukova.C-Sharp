@@ -1,30 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Text;
 using System.Drawing;
 
+
 namespace WindowsFormsPlane
-{
-    class FighterPlane : Fighter
+{
+    public class Fighter : Plane
     {
-        public Color DopColor { private set; get; }
-        public bool Weapon { private set; get; }
-        public bool Line { private set; get; }
-        public FighterPlane(int maxSpeed, float weight, Color mainColor, Color dopColor, bool
-       weapon, bool line) :
- base(maxSpeed, weight, mainColor)
+
+        protected const int planeWidth = 163;
+        protected const int planeHeight = 160;
+        public Fighter(int maxSpeed, float weight, Color mainColor)
         {
             MaxSpeed = maxSpeed;
             Weight = weight;
             MainColor = mainColor;
-            DopColor = dopColor;
-            Weapon = weapon;
-            Line = line;
         }
         public override void MoveTransport(Direction direction)
         {
             float step = MaxSpeed * 100 / Weight;
-
             switch (direction)
             {
                 // вправо
@@ -59,28 +54,32 @@ namespace WindowsFormsPlane
         }
         public override void DrawFighter(Graphics g)
         {
+
             Pen pen = new Pen(Color.Black);
-            Brush ff = new SolidBrush(DopColor);
 
-            Pen pp = new Pen(Color.Red);
-            if (Weapon)
-            {
-                g.FillEllipse(ff, StartPosX + 48, StartPosY + 40, 7, 25);
-                g.FillEllipse(ff, StartPosX + 59, StartPosY + 35, 7, 25);
-                g.FillEllipse(ff, StartPosX + 70, StartPosY + 32, 7, 25);
 
-                g.FillEllipse(ff, StartPosX + 145, StartPosY + 40, 7, 25);
-                g.FillEllipse(ff, StartPosX + 134, StartPosY + 35, 7, 25);
-                g.FillEllipse(ff, StartPosX + 122, StartPosY + 32, 7, 25);
+            Brush jr = new SolidBrush(MainColor);
+            g.FillEllipse(jr, StartPosX + 28, StartPosY + 40, 140, 30);
+            g.DrawEllipse(pen, StartPosX + 28, StartPosY + 40, 140, 30);
 
-            }
-            base.DrawFighter(g);
+            g.FillEllipse(jr, StartPosX + 60, StartPosY + 130, 80, 15);
+            g.DrawEllipse(pen, StartPosX + 60, StartPosY + 130, 80, 15);
 
-            if (Line)
-            {
-                g.DrawLine(pp, StartPosX + 100, StartPosY + 125, StartPosX + 100, StartPosY + 40);
-                g.DrawLine(pp, StartPosX + 80, StartPosY + 105, StartPosX + 120, StartPosY + 105);
-            }
+            Brush wing = new SolidBrush(MainColor);
+            g.FillEllipse(wing, StartPosX + 80, StartPosY - 6, 40, 160);
+            g.DrawEllipse(pen, StartPosX + 80, StartPosY - 6, 40, 160);
+
+            Brush pp = new SolidBrush(Color.Gray);
+            g.FillEllipse(pp, StartPosX + 85, StartPosY + 26, 30, 15);
+            g.DrawEllipse(pen, StartPosX + 85, StartPosY + 26, 30, 15);
+
+            g.FillEllipse(jr, StartPosX + 97, StartPosY + 120, 7, 30);
+            g.DrawEllipse(pen, StartPosX + 97, StartPosY + 120, 7, 30);
+
+            g.DrawLine(pen, StartPosX + 100, StartPosY + 25, StartPosX + 100, StartPosY + 40);
+
+
         }
     }
+
 }

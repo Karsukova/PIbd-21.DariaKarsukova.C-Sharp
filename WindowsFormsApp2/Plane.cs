@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Drawing;
+using System.Text;
 
 namespace WindowsFormsPlane
 {
+
     public abstract class Plane : IFighter
     {
         protected float StartPosX;
@@ -25,3 +26,4 @@ namespace WindowsFormsPlane
         public abstract void MoveTransport(Direction direction);
     }
 }
+

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Drawing;
+using System.Text;
 
 namespace WindowsFormsPlane
 {
@@ -9,7 +9,8 @@ namespace WindowsFormsPlane
     {
         void SetPosition(int x, int y, int width, int height);
         void MoveTransport(Direction direction);
-        
+
         void DrawFighter(Graphics g);
     }
 }
+

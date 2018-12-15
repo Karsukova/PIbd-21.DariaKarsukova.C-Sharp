@@ -22,11 +22,7 @@ namespace WindowsFormsPlane
             fighter.DrawFighter(gr);
             pictureBoxFighter.Image = bmp;
         }
-
-        private void pictureBoxFighter_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void buttonCreate_Click(object sender, EventArgs e)
         {
@@ -67,10 +63,10 @@ namespace WindowsFormsPlane
 
         private void buttonDown_Click(object sender, EventArgs e)
         {
+
             fighter.MoveTransport(Direction.Down);
             Draw();
         }
-
 
     }
 }

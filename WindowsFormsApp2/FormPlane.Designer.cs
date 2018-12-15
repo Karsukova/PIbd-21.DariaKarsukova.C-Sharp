@@ -2,6 +2,7 @@
 {
     partial class FormPlane
     {
+
         /// <summary>
         /// Обязательная переменная конструктора.
         /// </summary>
@@ -51,9 +52,9 @@
             // buttonDown
             // 
             this.buttonDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDown.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._31;
+            this.buttonDown.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._31;
             this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonDown.Location = new System.Drawing.Point(888, 482);
+            this.buttonDown.Location = new System.Drawing.Point(794, 402);
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.Size = new System.Drawing.Size(30, 30);
             this.buttonDown.TabIndex = 5;
@@ -63,9 +64,9 @@
             // buttonLeft
             // 
             this.buttonLeft.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLeft.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._41;
+            this.buttonLeft.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._41;
             this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonLeft.Location = new System.Drawing.Point(852, 482);
+            this.buttonLeft.Location = new System.Drawing.Point(758, 402);
             this.buttonLeft.Name = "buttonLeft";
             this.buttonLeft.Size = new System.Drawing.Size(30, 30);
             this.buttonLeft.TabIndex = 4;
@@ -75,9 +76,9 @@
             // buttonRight
             // 
             this.buttonRight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonRight.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._4;
+            this.buttonRight.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._4;
             this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonRight.Location = new System.Drawing.Point(924, 482);
+            this.buttonRight.Location = new System.Drawing.Point(830, 402);
             this.buttonRight.Name = "buttonRight";
             this.buttonRight.Size = new System.Drawing.Size(30, 30);
             this.buttonRight.TabIndex = 3;
@@ -87,9 +88,9 @@
             // buttonUp
             // 
             this.buttonUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUp.BackgroundImage = global::WindowsFormsPlane.Properties.Resources._21;
+            this.buttonUp.BackgroundImage = global::WindowsFormsApp2.Properties.Resources._21;
             this.buttonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.buttonUp.Location = new System.Drawing.Point(888, 446);
+            this.buttonUp.Location = new System.Drawing.Point(794, 366);
             this.buttonUp.Name = "buttonUp";
             this.buttonUp.Size = new System.Drawing.Size(30, 30);
             this.buttonUp.TabIndex = 2;
@@ -98,13 +99,11 @@
             // 
             // pictureBoxFighter
             // 
-            this.pictureBoxFighter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxFighter.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxFighter.Location = new System.Drawing.Point(8, 8);
             this.pictureBoxFighter.Name = "pictureBoxFighter";
-            this.pictureBoxFighter.Size = new System.Drawing.Size(972, 524);
+            this.pictureBoxFighter.Size = new System.Drawing.Size(878, 444);
             this.pictureBoxFighter.TabIndex = 0;
             this.pictureBoxFighter.TabStop = false;
-            this.pictureBoxFighter.Click += new System.EventHandler(this.pictureBoxFighter_Click);
             // 
             // button1
             // 
@@ -120,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 524);
+            this.ClientSize = new System.Drawing.Size(878, 444);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDown);
             this.Controls.Add(this.buttonLeft);

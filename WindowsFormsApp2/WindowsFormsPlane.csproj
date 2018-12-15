@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Direction.cs" />
-    <Compile Include="Fighter.cs" />
+    <Compile Include="Airplane.cs" />
     <Compile Include="FighterPlane.cs" />
     <Compile Include="FormPlane.cs">
       <SubType>Form</SubType>
